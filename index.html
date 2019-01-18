@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html lang="es">
+   <head>
+        <title>Callejero Google - Cesalv 2014</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="content-language" content="en" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link type="text/css" rel="stylesheet" href="css/jquery.mobile.css" />
+        <link type="text/css" rel="stylesheet" href="css/mobile.css" />
+        <script type="text/javascript" src="js/modernizr.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script> 
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.autocomplete.min.js"></script>
+        <script type="text/javascript" src="js/demo.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.map.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.map.services.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.map.extensions.js"></script>
+        <script src="js/cordova.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            document.addEventListener("deviceready", onDeviceReady, false);
+            function onDeviceReady() {
+                navigator.splashscreen.show();
+            }
+        </script>
+    </head> 
+    <body>
+        <div id="directions_map" data-role="page">
+            <center>
+                <h1>Callejero Google</h1>
+                <img src="compass.png" height="250">
+                <br>
+                <a id="a" href="index_a.html" rel="external" data-role="button">Andando</a><br>
+                <a id="c" href="index_c.html" rel="external" data-role="button">Coche</a><br>
+                <a id="t" href="index_t.html" rel="external" data-role="button">Transporte Público</a><br>
+            </center>
+        </div>
+    </body>
+</html>

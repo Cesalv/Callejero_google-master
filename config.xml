@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.cesalv.callejero"
+        versionCode="1.1.1"
+        version   = "1.1.1">
+        <name>Callejero Google</name>
+        <description>
+        Ayuda a la orientación basado en Google Maps. Permite llegar a los sitios caminando, en coche o usando transporte público.
+        </description>
+        <author email="cesalv@gmail.com" href="http://cesalv.com">
+            Cesalv
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+        <preference name="phonegap-version" value="cli-6.5.0" />
+        <preference name="orientation" value="portrait" />
+        <preference name="Fullscreen" value="true" />
+        <preference name="target-device" value="universal" />
+        <preference name="webviewbounce" value="true" />
+        <preference name="prerendered-icon" value="true" />
+        <preference name="stay-in-webview" value="true" />
+        <preference name="detect-data-types" value="true" />
+        <preference name="exit-on-suspend" value="true" />
+        <preference name="show-splash-screen-spinner" value="false" />
+        <preference name="auto-hide-splash-screen" value="true" />
+        <preference name="EnableViewportScale" value="true" />
+        <preference name="MediaPlaybackRequiresUserAction" value="false" />
+        <preference name="AllowInlineMediaPlayback" value="false" />
+        <preference name="BackupWebStorage" value="cloud" />
+        <preference name="TopActivityIndicator" value="gray" />
+        <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+        <preference name="HideKeyboardFormAccessoryBar" value="false" />
+        <preference name="SuppressesIncrementalRendering" value="false" />
+        <preference name="android-minSdkVersion" value="7" />
+        <preference name="android-installLocation" value="internalOnly" />
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="ErrorUrl" value=""/>
+        <preference name="BackgroundColor" value="0x000000"/>
+        <preference name="KeepRunning" value="false"/>
+        <preference name="DisallowOverscroll" value="false"/>
+        <preference name="LoadUrlTimeoutValue" value="20000" />
+        <preference name="disable-cursor" value="false" />
+        <gap:platform name="android" />
+        <feature name="http://api.phonegap.com/1.0/network"/>
+
+        <plugin name="cordova-plugin-geolocation" spec="~2.4.1" />
+        <plugin name="cordova-plugin-inappbrowser" spec="~1.6.1" />
+        <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
+        <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
+        <allow-navigation href="http://*/*" />
+        <allow-navigation href="https://*/*" />
+        <allow-navigation href="data:*" />
+
+
+        <gap:splash src="splash.png" gap:platform="android" gap:density="ldpi" />
+        <gap:splash src="splash.png" gap:platform="android" gap:density="mdpi" />
+        <gap:splash src="splash.png" gap:platform="android" gap:density="hdpi" />
+        <gap:splash src="splash.png" gap:platform="android" gap:density="xhdpi" />
+        <icon src="icon.png" />
+    </widget>
